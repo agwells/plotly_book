@@ -12,3 +12,5 @@ plotly_book.*
 screenshots/
 images/
 !docs/images
+packrat/lib*/
+packrat/src/

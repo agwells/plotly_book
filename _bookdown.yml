@@ -3,6 +3,7 @@ chapter_name: ""
 repo: https://github.com/cpsievert/plotly_book
 output_dir: docs
 clean: [packages.bib, bookdown.bbl]
+delete_merged_file: true
 rmd_files: [
   "index.Rmd",
   "ggplotly-vs-plotly.Rmd",

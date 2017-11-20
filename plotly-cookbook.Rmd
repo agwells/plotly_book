@@ -281,7 +281,7 @@ map_data("world", "canada") %>%
 
 As shown in [polygons](#polygons), it is possible to create maps using plotly's default (Cartesian) coordinate system, but plotly.js also has support for plotting [scatter traces](#scatter-traces) on top of either a [custom geo layout](https://plot.ly/r/reference/#layout-geo) or a [mapbox layout](https://plot.ly/r/reference/#layout-mapbox). Figure \@ref(fig:maps) compares the three different layout options in a single subplot.
 
-```{r maps, fig.width = 8, fig.cap = "Three different ways to render a map. On the top left is plotly's default cartesian coordinate system, on the top right is plotly's custom geographic layout, and on the bottom is mapbox.", screenshot.alt = "screenshots/maps"}
+```{r maps, eval = FALSE, fig.width = 8, fig.cap = "Three different ways to render a map. On the top left is plotly's default cartesian coordinate system, on the top right is plotly's custom geographic layout, and on the bottom is mapbox.", screenshot.alt = "screenshots/maps"}
 dat <- map_data("world", "canada") %>% group_by(group)
 
 map1 <- plot_ly(dat, x = ~long, y = ~lat) %>% 
